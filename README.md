@@ -1,5 +1,7 @@
 # Synchronous Express Workflows for AWS Step Functions
 
+[![Build Status](https://github.com/ryands17/step-function-sync-workflow/actions/workflows/main.yml/badge.svg)](https://github.com/ryands17/step-function-sync-workflow/actions/workflows/main.yml)
+
 This project contains a Step Function Express workflow which will be called synchronously via an API endpoint defined in API Gateway.
 
 This example is taken from the [docs](https://aws.amazon.com/blogs/compute/new-synchronous-express-workflows-for-aws-step-functions/) which detects the sentiment of the user that filled a feedback form and notifies via Email in case of a negative sentiment.

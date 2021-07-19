@@ -8,13 +8,15 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "dotenv -- cdk"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.114.0",
     "@types/jest": "^26.0.10",
     "@types/node": "16.3.3",
     "aws-cdk": "1.114.0",
+    "dotenv-cli": "4.0.0",
+    "esbuild": "0.12.15",
     "husky": "7.0.1",
     "jest": "^27.0.6",
     "lint-staged": "11.0.1",
@@ -24,8 +26,17 @@
     "typescript": "~4.3.5"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "1.114.0",
+    "@aws-cdk/aws-apigatewayv2": "1.114.0",
+    "@aws-cdk/aws-dynamodb": "1.114.0",
+    "@aws-cdk/aws-iam": "1.114.0",
+    "@aws-cdk/aws-lambda-nodejs": "1.114.0",
+    "@aws-cdk/aws-stepfunctions": "1.114.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "1.114.0",
     "@aws-cdk/core": "1.114.0",
-    "source-map-support": "^0.5.16"
+    "aws-sdk": "2.948.0",
+    "source-map-support": "^0.5.16",
+    "ulid": "2.3.0"
   },
   "prettier": {
     "semi": false,

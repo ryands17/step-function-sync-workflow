@@ -44,6 +44,6 @@
   },
   "lint-staged": {
     "*.{js,ts,json,md}": "prettier --write",
-    "*.{ts}": "yarn test"
+    "*.{js,ts}": "yarn test"
   }
 }

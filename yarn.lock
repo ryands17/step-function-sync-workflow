@@ -2,15 +2,20 @@
 # yarn lockfile v1
 
 
-"@aws-cdk/assert@1.114.0":
+"@aws-cdk/assertions@1.114.0":
   version "1.114.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/assert/-/assert-1.114.0.tgz#f0f20e6cbbc26b6fb677d66f7bca7f67b80437eb"
-  integrity sha512-xSlnPL1XtnY5wQ6HNijRdMUkSM3FIAe+Ampe3aXw7HhDih667aQw9L96s40aDy9P0lse5jcRaGz4xS4r9foL4g==
+  resolved "https://registry.yarnpkg.com/@aws-cdk/assertions/-/assertions-1.114.0.tgz#5c47e2d2a061e9b71d8a02a8851dbc22bc7d39e2"
+  integrity sha512-Ssdam1N8L6M65JcFQNtryyDdGeGbHKuAY0HvfG0uVyomcyZfV5CuzvIqB5lnEDkm0691B9r4dvZfRM6rfhlEzg==
   dependencies:
-    "@aws-cdk/cloudformation-diff" "1.114.0"
+    "@aws-cdk/cloud-assembly-schema" "1.114.0"
     "@aws-cdk/core" "1.114.0"
     "@aws-cdk/cx-api" "1.114.0"
+    colors "^1.4.0"
     constructs "^3.3.69"
+    diff "^5.0.0"
+    fast-deep-equal "^3.1.3"
+    string-width "^4.2.2"
+    table "^6.7.1"
 
 "@aws-cdk/assets@1.114.0":
   version "1.114.0"

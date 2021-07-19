@@ -3,6 +3,7 @@
 *.d.ts
 !typings.d.ts
 node_modules
+*.log
 .env
 
 # CDK asset staging directory

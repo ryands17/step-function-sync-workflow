@@ -7,11 +7,11 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "dotenv -- jest",
     "cdk": "dotenv -- cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.114.0",
+    "@aws-cdk/assertions": "1.114.0",
     "@types/jest": "^26.0.10",
     "@types/node": "16.3.3",
     "aws-cdk": "1.114.0",
@@ -43,6 +43,7 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.{js,ts,json,md}": "prettier --write"
+    "*.{js,ts,json,md}": "prettier --write",
+    "*.{ts}": "yarn test"
   }
 }

@@ -1,6 +1,7 @@
 import * as cdk from '@aws-cdk/core'
 import * as apiGw from '@aws-cdk/aws-apigateway'
 import * as iam from '@aws-cdk/aws-iam'
+import * as logs from '@aws-cdk/aws-logs'
 import { StateMachine } from '@aws-cdk/aws-stepfunctions'
 
 interface StackProps extends cdk.StackProps {
@@ -55,12 +56,19 @@ export class ApiStack extends cdk.Stack {
       },
     })
 
+    // Configure Log stream
+    const apiLogs = new logs.LogGroup(this, 'myApiLogs', {
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      retention: logs.RetentionDays.ONE_WEEK,
+    })
+
     // REST API
     const api = new apiGw.RestApi(this, 'myApi', {
       endpointTypes: [apiGw.EndpointType.REGIONAL],
       deployOptions: {
         stageName: 'dev',
         loggingLevel: apiGw.MethodLoggingLevel.ERROR,
+        accessLogDestination: new apiGw.LogGroupLogDestination(apiLogs),
       },
       defaultCorsPreflightOptions: {
         allowOrigins: ['*'],

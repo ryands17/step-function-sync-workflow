@@ -3,6 +3,7 @@ import * as ddb from '@aws-cdk/aws-dynamodb'
 import * as sfn from '@aws-cdk/aws-stepfunctions'
 import * as tasks from '@aws-cdk/aws-stepfunctions-tasks'
 import * as iam from '@aws-cdk/aws-iam'
+import * as logs from '@aws-cdk/aws-logs'
 import { createFn } from './helpers'
 
 export class SyncSfStack extends cdk.Stack {
@@ -93,7 +94,12 @@ export class SyncSfStack extends cdk.Stack {
     this.sentimentAnalysis = new sfn.StateMachine(this, 'sentimentAnalysis', {
       definition,
       stateMachineType: sfn.StateMachineType.EXPRESS,
-      timeout: cdk.Duration.minutes(2),
+      timeout: cdk.Duration.seconds(30),
+      logs: {
+        destination: new logs.LogGroup(this, 'sentimentAnalysisLogs', {
+          retention: logs.RetentionDays.ONE_WEEK,
+        }),
+      },
     })
 
     formData.grantWriteData(this.sentimentAnalysis)

@@ -27,10 +27,10 @@
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "1.114.0",
-    "@aws-cdk/aws-apigatewayv2": "1.114.0",
     "@aws-cdk/aws-dynamodb": "1.114.0",
     "@aws-cdk/aws-iam": "1.114.0",
     "@aws-cdk/aws-lambda-nodejs": "1.114.0",
+    "@aws-cdk/aws-logs": "1.114.0",
     "@aws-cdk/aws-stepfunctions": "1.114.0",
     "@aws-cdk/aws-stepfunctions-tasks": "1.114.0",
     "@aws-cdk/core": "1.114.0",

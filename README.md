@@ -1,5 +1,7 @@
 # Synchronous Express Workflows for AWS Step Functions
 
+[Blog Post](https://dev.to/ryands17/sentiment-analysis-with-step-functions-using-the-cdk-4n1h).
+
 [![Build Status](https://github.com/ryands17/step-function-sync-workflow/actions/workflows/main.yml/badge.svg)](https://github.com/ryands17/step-function-sync-workflow/actions/workflows/main.yml)
 
 This project contains a Step Function Express workflow which will be called synchronously via an API endpoint defined in API Gateway.

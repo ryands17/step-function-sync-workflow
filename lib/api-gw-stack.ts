@@ -87,7 +87,7 @@ export class ApiStack extends cdk.Stack {
             type: apiGw.JsonSchemaType.OBJECT,
             required: ['message'],
             properties: {
-              data: {
+              message: {
                 type: apiGw.JsonSchemaType.STRING,
                 minLength: 1,
               },

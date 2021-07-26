@@ -8,6 +8,15 @@ interface StackProps extends cdk.StackProps {
   sfn: StateMachine
 }
 
+export const responseTemplate = `
+  #set($output = $input.path('$.output'))
+  #set($root = $util.parseJson($output))
+  {
+    "ticketId": "$root.ticketId.Payload",
+    "message": "Feedback submitted successfully!"
+  }
+`.trim()
+
 export class ApiStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props: StackProps) {
     super(scope, id, props)
@@ -43,13 +52,7 @@ export class ApiStack extends cdk.Stack {
           {
             statusCode: '200',
             responseTemplates: {
-              'application/json': `
-              #set($output = $input.path('$.output'))
-              #set($root = $util.parseJson($output))
-              {
-                "ticketId": "$root.ticketId.Payload",
-                "message": "Feedback submitted successfully!"
-              }`,
+              'application/json': responseTemplate,
             },
           },
         ],

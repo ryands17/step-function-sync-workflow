@@ -14,7 +14,7 @@
     "@aws-cdk/assertions": "1.114.0",
     "@types/jest": "^26.0.10",
     "@types/node": "16.18.58",
-    "aws-cdk": "1.114.0",
+    "aws-cdk": "2.101.1",
     "dotenv-cli": "4.1.1",
     "esbuild": "0.19.5",
     "husky": "7.0.4",

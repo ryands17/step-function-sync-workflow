@@ -15,7 +15,7 @@
     "@types/jest": "^26.0.10",
     "@types/node": "16.18.71",
     "aws-cdk": "2.101.1",
-    "dotenv-cli": "4.1.1",
+    "dotenv-cli": "7.3.0",
     "esbuild": "0.19.11",
     "husky": "7.0.4",
     "jest": "^27.0.6",

@@ -23,7 +23,7 @@
     "prettier": "3.2.5",
     "ts-jest": "^29.0.0",
     "ts-node": "^10.1.0",
-    "typescript": "~5.3.0"
+    "typescript": "~5.4.0"
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "1.114.0",

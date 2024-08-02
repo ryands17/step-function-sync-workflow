@@ -11,10 +11,10 @@
     "cdk": "dotenv -- cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assertions": "1.114.0",
+    "@aws-cdk/assertions": "1.204.0",
     "@types/jest": "^29.0.0",
     "@types/node": "20.14.11",
-    "aws-cdk": "2.101.1",
+    "aws-cdk": "2.151.0",
     "dotenv-cli": "7.4.2",
     "esbuild": "0.20.2",
     "husky": "8.0.3",
@@ -26,14 +26,14 @@
     "typescript": "~5.5.0"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "1.114.0",
-    "@aws-cdk/aws-dynamodb": "1.114.0",
-    "@aws-cdk/aws-iam": "1.114.0",
-    "@aws-cdk/aws-lambda-nodejs": "1.114.0",
-    "@aws-cdk/aws-logs": "1.114.0",
-    "@aws-cdk/aws-stepfunctions": "1.114.0",
-    "@aws-cdk/aws-stepfunctions-tasks": "1.114.0",
-    "@aws-cdk/core": "1.114.0",
+    "@aws-cdk/aws-apigateway": "1.204.0",
+    "@aws-cdk/aws-dynamodb": "1.204.0",
+    "@aws-cdk/aws-iam": "1.204.0",
+    "@aws-cdk/aws-lambda-nodejs": "1.204.0",
+    "@aws-cdk/aws-logs": "1.204.0",
+    "@aws-cdk/aws-stepfunctions": "1.204.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "1.204.0",
+    "@aws-cdk/core": "1.204.0",
     "aws-sdk": "2.1659.0",
     "source-map-support": "^0.5.16",
     "ulid": "2.3.0"

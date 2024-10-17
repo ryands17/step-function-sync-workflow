@@ -34,7 +34,7 @@
     "@aws-cdk/aws-stepfunctions": "1.114.0",
     "@aws-cdk/aws-stepfunctions-tasks": "1.114.0",
     "@aws-cdk/core": "1.114.0",
-    "aws-sdk": "2.1659.0",
+    "aws-sdk": "2.1691.0",
     "source-map-support": "^0.5.16",
     "ulid": "2.3.0"
   },
